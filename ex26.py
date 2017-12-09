@@ -9,7 +9,7 @@ def sort_words(words):
 
 def print_first_word(words):
     """Prints the first word after popping it off."""
-    word = words.poop(0)
+    word = words.pop(0)
     print(word)
 
 def print_last_word(words):
@@ -52,7 +52,7 @@ print("--------------")
 print(poem)
 print("--------------")
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 6
 print("This should be five: %s" % five)
 
 def secret_formula(started):
@@ -69,12 +69,15 @@ print("With a starting point of: %d" % start_point)
 print("We'd have %d jeans, %d jars, and %d crates." % (beans, jars, crates))
 
 start_point = start_point / 10
+beans, jars, crates = secret_formula(start_point)
 
 print("We can also do that this way:")
-print("We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_pont))
+print("We'd have %d beans, %d jars, and %d crabapples." % (beans, jars, crates))
 
 
 sentence = "All god\tthings come to those who weight."
+
+import ex25
 
 words = ex25.break_words(sentence)
 sorted_words = ex25.sort_words(words)
@@ -88,4 +91,4 @@ print(sorted_words)
 
 print_first_and_last(sentence)
 
-print_first_a_last_sorted(senence)
+print_first_and_last_sorted(sentence)
